@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_facebook_responsive_ui/config/palette.dart';
+import 'package:flutter_facebook_responsive_ui/data/data.dart';
+import 'package:flutter_facebook_responsive_ui/widgets/create_post_container.dart';
 import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -38,6 +40,9 @@ class HomeScreen extends StatelessWidget {
                 onPressed: () {},
               ),
             ],
+          ),
+          SliverToBoxAdapter(
+            child: CreatePostContainer(currentUser: currentUser),
           ),
         ],
       ),
