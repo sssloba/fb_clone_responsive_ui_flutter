@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_responsive_ui/config/palette.dart';
+import 'package:flutter_facebook_responsive_ui/helpers/custom_scroll_behaviour.dart';
 import 'package:flutter_facebook_responsive_ui/screens/screens.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         scaffoldBackgroundColor: Palette.scaffold,
       ),
+      scrollBehavior: CustomScrollBehavior(),
       home: NavScreen(),
     );
   }
