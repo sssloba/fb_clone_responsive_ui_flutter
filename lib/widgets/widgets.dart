@@ -6,3 +6,5 @@ export 'post_container.dart';
 export 'custom_tab_bar.dart';
 export 'custom_app_bar.dart';
 export 'user_card.dart';
+export 'contacts_list.dart';
+export 'more_options_list.dart';
